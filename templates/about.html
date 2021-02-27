@@ -1,0 +1,83 @@
+{% extends "base1.html" %}
+{% load static %}
+
+{% block head %}About US{% endblock %}
+{% block content %}
+<html lang="en">
+<head>
+<style>
+    body{
+        background:gold;
+    }
+    #cdiv{
+      background-color: darkgray;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+    #con1{
+            margin-top: 30px;
+    }
+
+    h2{
+        color: lavenderblush;
+
+        position: relative;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="text-center" id="con1">
+        <marquee behavior="alternate" scrollamount="3"><h2><b> Introduction about Python </b></h2></marquee>>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" id="cdiv" >
+            <div id="div1">
+                <h3 id="h31">{{ content }}</h3>
+
+Guido van Rossum, the creator of the Python language, named the language after the BBC show
+"Monty Python's Flying Circus". He doesn't particularly like snakes that kill animals
+for food by winding their long bodies around them and crushing them.
+
+<h3>Features of Python</h3>
+
+<b>Simple</b>
+<br><br>
+<b>Easy to Learn</b>
+<br><br>
+<b>Free and Open Source</b>
+<br><br>
+<b>High-level Language</b>
+<br><br>
+<b>Portable</b>
+<br><br>
+<b>Interpreted</b>
+<br><br>
+<b>Object Oriented</b>
+<br><br>
+<b>Extensible</b>
+<br><br>
+<b>Embeddable</b>
+<br><br>
+<b>Extensive Libraries</b>
+
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+        <img src="{% static 'images/aboutus_img.jpg' %}" class="img-thumbnail"
+        style=" width: 95%; height: 95%; margin-top: 100px">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+{% endblock %}

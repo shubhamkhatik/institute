@@ -1,0 +1,168 @@
+{% extends "base1.html" %}
+{% load static %}
+
+{#{% block head %}Contact US{% endblock %}#}
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+
+    <style>
+        body{
+        background-color:chocolate;
+    }
+        table{
+                background: antiquewhite;
+        }
+        thead{
+            background: burlywood;
+        }
+        #con1{
+                margin-top: 37px
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container" id="con1">
+    <marquee behavior="alternate" scrollamount="5"><h1 class="courseh1">Available Courses</h1> </marquee>
+    <table class="table
+                        table-striped
+                        table-bordered
+                        table-hover
+                        table-condensed
+                        table-responsive" >
+    <thead>
+      <tr>
+        <th>Course No </th>
+        <th>Course Name</th>
+        <th>Duration</th>
+        <th>Course Details</th>
+        <th>Trainer Name</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>01</td>
+        <td>Python</td>
+        <td>45 days</td>
+        <td><a href="{% static 'other files/Python.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Lokesh</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Django</td>
+        <td>45 days</td>
+        <td><a href="{% static 'other files/DJANGO.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Narayana</td>
+      </tr>
+      <tr>
+        <td>03</td>
+        <td>Oracle</td>
+        <td>30 days</td>
+        <td> <a href="{% static 'other files/ORACLE.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Narayana</td>
+      </tr>
+    <tr>
+        <td>04</td>
+        <td>SQL Server</td>
+        <td>30 days</td>
+        <td> <a href="{% static 'other files/SQL Server.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Narayana</td>
+      </tr>
+<tr>
+        <td>05</td>
+        <td>SQL DBA</td>
+        <td>45 days</td>
+        <td> <a href="{% static 'other files/SQL DBA.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Narayana</td>
+      </tr>
+<tr>
+        <td>06</td>
+        <td>MSBI</td>
+        <td>45 days</td>
+        <td> <a href="{% static 'other files/MSBI.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Durga</td>
+      </tr>
+<tr>
+        <td>07</td>
+        <td>POWER BI</td>
+        <td>30 days</td>
+        <td> <a href="{% static 'other files/MSBI.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Durga</td>
+      </tr>
+<tr>
+        <td>08</td>
+        <td>C Langugae</td>
+        <td>45 days</td>
+        <td> <a href="{% static 'other files/C language.docx' %}" target="_top"> Click here </a></td>
+        <td>Mr. Narayana</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" >
+            <h1 class="courseh1">Course Highlights</h1>
+    <ol><b>
+        <li> We are providing high-class training. </li>
+        <li>Students can directly interact with trainer for any clarifications.</li>
+        <li>Soft copies will be provided for all concepts.</li>
+        <li>We provide 24/7 lab fecility along with coordinator.</li>
+        <li>One relatime project will be given for every course.</li>
+        <li>Three realtime projects will be implemented by using Django Framework.</li>
+        <li>Projects are implemented in the presence of Trainer</li>
+        <li>On-demand batch will be started at your comfortable time</li>
+        <li>Interview guidance will be given to all students.</li>
+        <li>All trainings are very interactive.</li>
+
+    </b>
+    </ol>
+    </div>
+<div class="col-sm-6">
+   <img src="{% static 'images/training_img.jpg' %}" class="img-thumbnail" style=" width: 100%; height: 20%; margin-bottom: 100px">
+</div>
+
+</div>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
+
+{% endblock %}
+
